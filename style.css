@@ -6,10 +6,12 @@
 }
 
 .sidebar{
+    position: absolute;
     background-color: rgb(223, 218, 218);
-    width: 434px;
+    /* width: 434px; */
     font-family: 'Fira Sans', sans-serif;
     height: 100vh;
+    transition: transform 0.3s ease-in ;
 }
 
 .sidebar nav{
@@ -46,6 +48,7 @@
 }
 
 .devInfo{
+    font-size: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -53,11 +56,11 @@
 }
 
 .hello{
-    font-size: 65px;
+    font-size: 2em;
 }
 
 .name{
-    font-size:50px ;
+    font-size:3em ;
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
 }
@@ -67,13 +70,14 @@
 }
 
 .moreabout{
-    font-size: 22px;
+    font-size: 1.8em;
     font-family: 'Fira Sans', sans-serif;
     margin-top: 24px;
 }
 
 .buttons{
-    margin-top: 34px;
+    margin-top: 2.2em;
+    font-size: 16px;
 }
 
 .btn{
@@ -82,8 +86,8 @@
     background-color: rgb(95, 174, 231);
     color: white;
     font-weight: bold;
-    font-size: 21px;
-    margin: 0 3px;
+    font-size: 1.8em;
+    margin: 3px 3px;
     cursor: pointer;
 }
 
@@ -107,12 +111,13 @@
     padding: 0 34px;  
     padding-top: 144px;
     font-family: 'Fira Sans' sans-serif;
+    margin: 88px;
 
 }
 .contactform h1{    
     font-family: 'Source Code Pro', monospace;
     font-weight:600;
-    padding: 12px 0;
+    /* padding: 12px 0; */
 }
 
 .contactform form div{
@@ -122,10 +127,15 @@
 }
 
 .contactform form div input{
-    width: 26vw;
+    /* width: 26vw; */
     border-radius: 5px;
     margin: 6px 0 0 0;
     padding: 3px;
+}
+.contactform form {
+    /* width: 26vw; */
+    margin: 0 40px;
+
 }
 
 #emailHelp{
@@ -143,6 +153,10 @@
     margin: 3px 0;
 }
 
+.blogContainer{
+    margin: 88px 88px;
+}
+
 .blogItem{  
     margin: 20px;
     font-family: 'Fira Sans', sans-serif;  
@@ -155,6 +169,10 @@
 
 p{    
     font-family: 'Source Code Pro', monospace;
+}
+
+.intro{
+    margin: 88px 88px;
 }
 
 .intro h2{
@@ -200,7 +218,44 @@ p{
     background-color: yellow;
 }
 
+.sidebarGo{
+    transform: translate(-433px, 0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cross{
+    margin-left: 185px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1615px){
+  
+    .buttons{
+        font-size: 7px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .devPic{
+        display: none;
+    }
+    .intro .blogContainer .contactform{
+        margin: 8px;
+    }
+}
 
 
-
-
+/*
+make font-sizes, and paddng uniform along with other templates
+complete the services offered page
+*/
